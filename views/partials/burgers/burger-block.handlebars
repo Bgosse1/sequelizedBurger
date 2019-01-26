@@ -1,0 +1,9 @@
+{{#if devoured}}
+<input class="form-control" type="text" placeholder="{{id}}. {{burger_name}} Eaten By: {{"Customer.customer_name"}}" readonly="">
+{{else}}
+<div class="mt-4">
+	<pre class="d-inline">{{id}}. {{burger_name}}</pre>
+	<input id ="custname" class="custInput" input="" type="text" name="customer" placeholder="Customer?">
+	<button class="change-devour d-inline" data-id="{{id}}" data-newdevour="{{devoured}}">Devour it!</button>
+</div>
+{{/if}}
